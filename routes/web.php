@@ -6,6 +6,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ola', function () {
-    echo "Olá, mundo!";
-});
+use App\Http\Controllers\SeriesController;
+Route::get('/series', [SeriesController::class, 'listarSeries']);

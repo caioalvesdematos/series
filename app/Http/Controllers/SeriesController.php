@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-    public function listarseries()
+    public function listarSeries()
     {
         $series = [
             'Breaking Bad',
